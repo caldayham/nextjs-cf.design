@@ -96,7 +96,7 @@ export default function Hero() {
               <span className="text-white/40 text-[12px] md:text-[14px] tracking-wide italic ml-1 flex items-center gap-2">
                 * Free within 30 minutes of Palo Alto
               </span>
-              <a href="#purpose" className="group border border-white text-white px-10 py-2 mt-4 rounded-sm text-sm font-bold tracking-[0.15em] uppercase hover:bg-white/10 transition-all flex items-center justify-center gap-3">
+              <a href="#about" className="group border border-white text-white px-10 py-2 mt-4 rounded-sm text-sm font-bold tracking-[0.15em] uppercase hover:bg-white/10 transition-all flex items-center justify-center gap-3">
                 Learn More
                 <ChevronDown className="w-4 h-4 group-hover:translate-y-1 transition-transform" />
               </a>

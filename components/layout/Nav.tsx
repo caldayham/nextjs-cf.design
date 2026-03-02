@@ -33,7 +33,7 @@ export default function Nav({ onInquiry }: NavProps) {
           )}
         </div>
         <div className="hidden md:flex items-center space-x-8">
-          {['Purpose', 'Process', 'Portfolio', 'Reviews', 'FAQ'].map((item) => (
+          {['About', 'Portfolio', 'Reviews', 'FAQ'].map((item) => (
             <Link key={item} href={`/#${item.toLowerCase()}`} className="text-xs font-semibold tracking-[0.2em] uppercase transition-colors text-white/80 hover:text-white">{item}</Link>
           ))}
           <div className="relative" onMouseEnter={() => setCsOpen(true)} onMouseLeave={() => setCsOpen(false)}>
@@ -56,7 +56,7 @@ export default function Nav({ onInquiry }: NavProps) {
       </div>
       {isOpen && (
         <div className="absolute top-full left-0 w-full bg-white shadow-xl py-8 px-6 flex flex-col space-y-4 md:hidden border-t border-gray-100">
-          {['Purpose', 'Process', 'Portfolio', 'Reviews', 'FAQ'].map((item) => (
+          {['About', 'Portfolio', 'Reviews', 'FAQ'].map((item) => (
             <Link key={item} href={`/#${item.toLowerCase()}`} onClick={() => setIsOpen(false)} className="text-lg font-serif text-arch-charcoal border-b border-gray-100 pb-3">{item}</Link>
           ))}
           <div>

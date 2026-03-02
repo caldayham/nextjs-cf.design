@@ -4,7 +4,7 @@ import { Check } from '@/components/ui/Icons'
 
 export default function Purpose() {
   return (
-    <section id="purpose" className="py-20 md:py-32 bg-arch-concrete bg-noise">
+    <section id="about" className="py-20 md:py-32 bg-arch-concrete bg-noise">
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row gap-16 md:gap-24 items-center">
 
