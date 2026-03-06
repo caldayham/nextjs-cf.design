@@ -50,10 +50,10 @@ export default function CaseStudyLayout({
           <div className="container mx-auto px-6 -mt-8">
             <Reveal delay={200}>
               <div className="aspect-[16/9] md:aspect-[21/9] rounded-sm overflow-hidden shadow-xl border-8 border-white relative shimmer-bg">
-                <Image src={frontmatter.heroImage} alt={frontmatter.title} fill className="object-cover" sizes="100vw" priority style={frontmatter.heroObjectPosition ? { objectPosition: frontmatter.heroObjectPosition } : undefined} />
+                <Image src={`${frontmatter.heroImage}`} alt={frontmatter.title} fill className="object-cover" sizes="100vw" priority style={frontmatter.heroObjectPosition ? { objectPosition: frontmatter.heroObjectPosition } : undefined} />
                 {frontmatter.heroSaturationBoost && (
                   <Image
-                    src={frontmatter.heroImage}
+                    src={`${frontmatter.heroImage}`}
                     alt=""
                     fill
                     className="object-cover pointer-events-none"
