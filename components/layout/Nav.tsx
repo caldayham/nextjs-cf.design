@@ -42,7 +42,7 @@ export default function Nav({ onInquiry }: NavProps) {
             </button>
             {csOpen && (
               <div className="absolute top-full right-0 pt-2">
-                <div className="bg-arch-black/95 backdrop-blur-md border border-white/10 py-2 min-w-[310px]">
+                <div className="bg-arch-black/95 backdrop-blur-md border border-white/10 py-2 whitespace-nowrap">
                   {CASE_STUDIES.map((cs) => (
                     <Link key={cs.href} href={cs.href} className="block px-4 py-2.5 text-xs font-semibold tracking-[0.15em] uppercase text-white/70 hover:text-white hover:bg-white/10 transition-colors" onClick={() => setCsOpen(false)}>{cs.title}</Link>
                   ))}
