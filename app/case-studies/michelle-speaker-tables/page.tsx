@@ -23,7 +23,7 @@ const IMG = '/case-studies/michelle-speaker-tables'
 
 export default function MichelleSpeakerTablesPage() {
   return (
-    <CaseStudyLayout frontmatter={frontmatter}>
+    <CaseStudyLayout frontmatter={frontmatter} currentHref="/case-studies/michelle-speaker-tables">
       {/* ── The Brief ─────────────────────────────────── */}
       <h2 className="text-xs font-bold tracking-[0.25em] text-arch-mineral uppercase mb-6 flex items-center gap-3">
         <span className="w-8 h-[1px] bg-arch-mineral" /> The Brief
