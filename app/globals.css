@@ -86,3 +86,18 @@ select option {
   background-size: 200% 100%;
   animation: shimmer 1.5s ease-in-out infinite;
 }
+
+/* Dark shimmer for hero/dark backgrounds */
+.shimmer-bg-dark {
+  background: linear-gradient(90deg, #1a1a1a 25%, #2a2a2a 50%, #1a1a1a 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s ease-in-out infinite;
+}
+
+/* Hardware-accelerated scroll columns — prevent paint flicker */
+.animate-scroll-up,
+.animate-scroll-down,
+.animate-scroll-left {
+  will-change: transform;
+  backface-visibility: hidden;
+}

@@ -1,5 +1,5 @@
 'use client'
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef, useCallback } from 'react'
 import Image from 'next/image'
 import { useShell } from '@/context/ShellContext'
 import { Reveal } from '@/components/ui/Reveal'
@@ -14,23 +14,28 @@ const mobileImg = (path: string): string => {
 
 interface HeroVibeCardProps {
   img: string
+  onLoad?: () => void
 }
 
-const HeroVibeCard = ({ img }: HeroVibeCardProps) => (
+const HeroVibeCard = ({ img, onLoad }: HeroVibeCardProps) => (
   <div className="w-full mb-4 break-inside-avoid">
-    <div className="rounded-sm overflow-hidden border border-white/10 shadow-lg">
+    <div className="rounded-sm overflow-hidden border border-white/10 shadow-lg shimmer-bg-dark">
       <Image
         src={img}
         alt="Life at CF"
         width={600}
         height={800}
         className="w-full h-auto object-cover grayscale-[10%] hover:grayscale-0 transition-all duration-700 hover:scale-105"
-        loading="lazy"
+        loading="eager"
         sizes="(min-width: 1280px) 20vw, 33vw"
+        onLoad={onLoad}
       />
     </div>
   </div>
 )
+
+// Minimum images that must load before animation starts
+const MIN_LOADED_BEFORE_ANIMATE = 6
 
 export default function Hero() {
   const { openInquiry } = useShell()
@@ -38,6 +43,15 @@ export default function Hero() {
   const col2 = VIBE_IMAGES.slice(Math.ceil(VIBE_IMAGES.length / 2))
   const buttonRef = useRef<HTMLButtonElement>(null)
   const [stickyBtn, setStickyBtn] = useState(false)
+  const [imagesReady, setImagesReady] = useState(false)
+  const loadedCount = useRef(0)
+
+  const handleImageLoad = useCallback(() => {
+    loadedCount.current += 1
+    if (!imagesReady && loadedCount.current >= MIN_LOADED_BEFORE_ANIMATE) {
+      setImagesReady(true)
+    }
+  }, [imagesReady])
 
   useEffect(() => {
     const onScroll = () => {
@@ -66,9 +80,20 @@ export default function Hero() {
         <div className="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-arch-black to-transparent z-10 pointer-events-none"></div>
         <div className="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-arch-black to-transparent z-10 pointer-events-none"></div>
         <div className="absolute inset-x-0 bottom-0 h-12 bg-gradient-to-t from-arch-black to-transparent z-10 pointer-events-none"></div>
-        <div className="animate-scroll-left flex gap-3 w-max">
+        <div className={`flex gap-3 w-max ${imagesReady ? 'animate-scroll-left' : ''}`}>
           {[...VIBE_IMAGES, ...VIBE_IMAGES].map((img, i) => (
-            <Image key={`m-${i}`} src={mobileImg(img)} alt="" width={192} height={160} className="h-40 w-48 object-cover rounded-sm border border-white/10 flex-shrink-0" loading="lazy" sizes="192px" />
+            <div key={`m-${i}`} className="shimmer-bg-dark h-40 w-48 flex-shrink-0 rounded-sm border border-white/10">
+              <Image
+                src={mobileImg(img)}
+                alt=""
+                width={192}
+                height={160}
+                className="h-40 w-48 object-cover rounded-sm flex-shrink-0"
+                loading="eager"
+                sizes="192px"
+                onLoad={handleImageLoad}
+              />
+            </div>
           ))}
         </div>
       </div>
@@ -113,17 +138,17 @@ export default function Hero() {
         <div className="flex gap-4 p-4 w-full justify-center">
           {/* Column 1 - Scroll Up */}
           <div className="w-1/2 h-full overflow-hidden relative">
-            <div className="animate-scroll-up w-full space-y-4">
+            <div className={`w-full space-y-4 ${imagesReady ? 'animate-scroll-up' : ''}`}>
               {[...col1, ...col1, ...col1].map((img, i) => (
-                <HeroVibeCard key={`h-c1-${i}`} img={img} />
+                <HeroVibeCard key={`h-c1-${i}`} img={img} onLoad={handleImageLoad} />
               ))}
             </div>
           </div>
           {/* Column 2 - Scroll Down */}
           <div className="w-1/2 h-full overflow-hidden relative">
-            <div className="animate-scroll-down w-full space-y-4">
+            <div className={`w-full space-y-4 ${imagesReady ? 'animate-scroll-down' : ''}`}>
               {[...col2, ...col2, ...col2].map((img, i) => (
-                <HeroVibeCard key={`h-c2-${i}`} img={img} />
+                <HeroVibeCard key={`h-c2-${i}`} img={img} onLoad={handleImageLoad} />
               ))}
             </div>
           </div>
