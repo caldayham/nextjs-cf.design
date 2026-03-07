@@ -41,7 +41,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="antialiased overflow-x-hidden selection:bg-arch-mineral selection:text-white">
         <SiteShell>{children}</SiteShell>
       </body>
-      <GoogleAnalytics gaId="G-DNSCN01BPT" />
+      {process.env.NODE_ENV === 'production' && (
+        <GoogleAnalytics gaId="G-DNSCN01BPT" />
+      )}
     </html>
   )
 }

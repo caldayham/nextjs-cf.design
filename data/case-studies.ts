@@ -28,4 +28,11 @@ export const CASE_STUDIES: CaseStudy[] = [
     location: 'Palo Alto, CA',
     description: 'A sturdy redwood fence with custom gate — built in two days, including tree removal and hauling.',
   },
+  {
+    title: "Tina's Redwood Potting Station",
+    href: '/case-studies/tina-potting-station',
+    image: '/case-studies/tina-potting-station/hero-collage.jpg',
+    location: 'Palo Alto, CA',
+    description: 'A custom redwood potting station with corrugated steel roof, tool rack, and slatted storage — built in two days.',
+  },
 ]
