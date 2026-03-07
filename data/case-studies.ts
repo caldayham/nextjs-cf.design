@@ -21,4 +21,11 @@ export const CASE_STUDIES: CaseStudy[] = [
     location: 'Palo Alto, CA',
     description: 'A dead walnut tree and two marble slabs become bespoke twin tables — a birthday surprise.',
   },
+  {
+    title: "Peggy's Backyard Dog Fence",
+    href: '/case-studies/peggy-backyard-fence',
+    image: '/case-studies/peggy-backyard-fence/finished-fence-from-neighbors-side.JPG',
+    location: 'Palo Alto, CA',
+    description: 'A sturdy redwood fence with custom gate — built in two days, including tree removal and hauling.',
+  },
 ]

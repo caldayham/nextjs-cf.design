@@ -1,13 +1,17 @@
+'use client'
+import { useState, useRef, useCallback } from 'react'
 import Image from 'next/image'
 import { Reveal } from '@/components/ui/Reveal'
 import { REVIEWS } from '@/data/reviews'
 
-function ReviewCard({ img }: { img: string }) {
+const MIN_LOADED_BEFORE_ANIMATE = 6
+
+function ReviewCard({ img, onLoad }: { img: string; onLoad?: () => void }) {
   return (
     <div className="w-full mb-6 break-inside-avoid">
       <div className="bg-white p-3 rounded-md border border-arch-stone shadow-sm hover:shadow-md transition-all duration-500">
-        <div className="overflow-hidden bg-arch-concrete grayscale-[10%] hover:grayscale-0 transition-all duration-500">
-          <Image src={img} alt="Review" width={600} height={400} className="w-full h-auto object-cover mix-blend-multiply opacity-90 hover:opacity-100" loading="lazy" sizes="(min-width: 1024px) 33vw, 100vw" />
+        <div className="overflow-hidden bg-arch-concrete grayscale-[10%] hover:grayscale-0 transition-all duration-500 shimmer-bg">
+          <Image src={img} alt="Review" width={600} height={400} className="w-full h-auto object-cover mix-blend-multiply opacity-90 hover:opacity-100" loading="lazy" sizes="(min-width: 1024px) 33vw, 100vw" onLoad={onLoad} />
         </div>
       </div>
     </div>
@@ -18,6 +22,16 @@ export default function Reviews() {
   const col1 = REVIEWS.filter((_, i) => i % 3 === 0)
   const col2 = REVIEWS.filter((_, i) => i % 3 === 1)
   const col3 = REVIEWS.filter((_, i) => i % 3 === 2)
+
+  const [imagesReady, setImagesReady] = useState(false)
+  const loadedCount = useRef(0)
+
+  const handleImageLoad = useCallback(() => {
+    loadedCount.current += 1
+    if (!imagesReady && loadedCount.current >= MIN_LOADED_BEFORE_ANIMATE) {
+      setImagesReady(true)
+    }
+  }, [imagesReady])
 
   return (
     <section id="reviews" className="py-20 md:py-32 bg-arch-concrete overflow-hidden relative border-t border-arch-stone">
@@ -36,18 +50,18 @@ export default function Reviews() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 h-full max-w-7xl mx-auto px-6">
           <div className="hidden md:block relative h-full overflow-hidden hover-pause">
-            <div className="animate-scroll-up w-full">
-              {[...col1, ...col1].map((img, i) => <ReviewCard key={`c1-${i}`} img={img} />)}
+            <div className={`w-full ${imagesReady ? 'animate-scroll-up' : ''}`}>
+              {[...col1, ...col1].map((img, i) => <ReviewCard key={`c1-${i}`} img={img} onLoad={handleImageLoad} />)}
             </div>
           </div>
           <div className="relative h-full overflow-hidden hover-pause">
-            <div className="animate-scroll-down w-full">
-              {[...col2, ...col2, ...col2].map((img, i) => <ReviewCard key={`c2-${i}`} img={img} />)}
+            <div className={`w-full ${imagesReady ? 'animate-scroll-down' : ''}`}>
+              {[...col2, ...col2, ...col2].map((img, i) => <ReviewCard key={`c2-${i}`} img={img} onLoad={handleImageLoad} />)}
             </div>
           </div>
           <div className="hidden lg:block relative h-full overflow-hidden hover-pause">
-            <div className="animate-scroll-up w-full">
-              {[...col3, ...col3].map((img, i) => <ReviewCard key={`c3-${i}`} img={img} />)}
+            <div className={`w-full ${imagesReady ? 'animate-scroll-up' : ''}`}>
+              {[...col3, ...col3].map((img, i) => <ReviewCard key={`c3-${i}`} img={img} onLoad={handleImageLoad} />)}
             </div>
           </div>
         </div>

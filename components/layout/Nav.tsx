@@ -66,7 +66,7 @@ export default function Nav({ onInquiry }: NavProps) {
             {mobileCsOpen && (
               <div className="flex flex-col space-y-3 pt-3">
                 {CASE_STUDIES.map((cs) => (
-                  <Link key={cs.href} href={cs.href} className="text-base font-serif text-arch-mineral border-b border-gray-100 pb-3 pl-4">{cs.title}</Link>
+                  <Link key={cs.href} href={cs.href} onClick={() => setIsOpen(false)} className="text-base font-serif text-arch-mineral border-b border-gray-100 pb-3 pl-4">{cs.title}</Link>
                 ))}
               </div>
             )}
