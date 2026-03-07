@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter, Playfair_Display } from 'next/font/google'
 import { GoogleAnalytics } from '@next/third-parties/google'
-import SiteShell from '@/components/layout/SiteShell'
 import './globals.css'
 
 const inter = Inter({
@@ -39,7 +38,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`scroll-smooth ${inter.variable} ${playfair.variable}`}>
       <body className="antialiased overflow-x-hidden selection:bg-arch-mineral selection:text-white">
-        <SiteShell>{children}</SiteShell>
+        {children}
       </body>
       {process.env.NODE_ENV === 'production' && (
         <GoogleAnalytics gaId="G-DNSCN01BPT" />
