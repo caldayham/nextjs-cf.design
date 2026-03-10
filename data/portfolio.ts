@@ -7,16 +7,16 @@ export interface PortfolioItem {
 }
 
 export const PORTFOLIO_ITEMS: PortfolioItem[] = [
-  { title: "Perry's Double-Decker Little Library & Dog Amenities Station", location: "San Mateo County, CA", published: true, images: ["/assets/jobs/25_perry_library.jpg", "/assets/jobs/25_perry_library.jpg"], caseStudy: "/case-studies/palo-alto-redwood-little-library/" },
-  { title: "Michelle's Marble Topped Black Walnut Speaker Tables", location: "San Mateo County, CA", published: true, images: ["/assets/jobs/26_michelle_tables.jpg", "/assets/jobs/26_michelle_tables.jpg"], caseStudy: "/case-studies/palo-alto-walnut-marble-tables/" },
+  { title: "Perry's Double-Decker Little Library & Dog Amenities Station", location: "San Mateo County, CA", published: true, images: ["/assets/jobs/25_perry_library.jpg", "/assets/jobs/25_perry_library.jpg"], caseStudy: "/case-studies/perry-little-library" },
+  { title: "Michelle's Marble Topped Black Walnut Speaker Tables", location: "San Mateo County, CA", published: true, images: ["/assets/jobs/26_michelle_tables.jpg", "/assets/jobs/26_michelle_tables.jpg"], caseStudy: "/case-studies/michelle-speaker-tables" },
   { title: "Perry's Tri-Door Redwood Irrigation Control Box", location: "San Mateo County, CA", published: true, images: ["/assets/jobs/13_perry_irrigation.jpg", "/assets/jobs/13_perry_irrigation.jpg"] },
   { title: "Suzi's Redwood Burl Cut-Out Fence", location: "San Mateo County, CA", published: true, images: ["/assets/jobs/21_suzi_fence.jpg", "/assets/jobs/21_suzi_fence.jpg"] },
-  { title: "Tina's Redwood & Stainless Steel Potting Station", location: "San Mateo County, CA", published: true, images: ["/assets/jobs/11_tina_potting.jpg", "/assets/jobs/11_tina_potting.jpg"] },
-  { title: "Peggy's Back Yard Dog Fence", location: "San Mateo County, CA", published: true, images: ["/assets/jobs/cal-peggy-fence.jpg", "/assets/jobs/cal-peggy-fence.jpg"] },
+  { title: "Tina's Redwood & Stainless Steel Potting Station", location: "San Mateo County, CA", published: true, images: ["/assets/jobs/11_tina_potting.jpg", "/assets/jobs/11_tina_potting.jpg"], caseStudy: "/case-studies/tina-potting-station" },
+  { title: "Peggy's Back Yard Dog Fence", location: "San Mateo County, CA", published: true, images: ["/assets/jobs/cal-peggy-fence.jpg", "/assets/jobs/cal-peggy-fence.jpg"], caseStudy: "/case-studies/peggy-backyard-fence" },
   { title: "Kathy's Redwood Crawlspace Cover", location: "Santa Clara County, CA", published: true, images: ["/assets/jobs/16_kathy_crawlspace.jpg", "/assets/jobs/16_kathy_crawlspace.jpg"] },
   { title: "Leslie's Twin Fence", location: "San Mateo County, CA", published: true, images: ["/assets/jobs/15_leslie_fence.jpg", "/assets/jobs/15_leslie_fence.jpg"] },
   { title: "Marsha's Dual Bay Door Garden Bed Cover", location: "Santa Clara County, CA", published: true, images: ["/assets/jobs/14_marsha_excluder.jpg", "/assets/jobs/14_marsha_excluder.jpg"] },
-  { title: "Robin's Composite Deck & Redwood Awning", location: "San Mateo County, CA", published: true, images: ["/assets/jobs/Robin-deck-after.jpg", "/assets/jobs/Robin-deck-after.jpg"] },
+  { title: "Robin's Composite Deck & Redwood Awning", location: "San Mateo County, CA", published: true, images: ["/assets/jobs/Robin-deck-after.jpg", "/assets/jobs/Robin-deck-after.jpg"], caseStudy: "/case-studies/composite-deck-awning" },
   { title: "Karen's Back Yard Sand-Set Runnen Patio", location: "Santa Clara County, CA", published: true, images: ["/assets/jobs/10_kerstin_patio.jpg", "/assets/jobs/10_kerstin_patio.jpg"] },
   { title: "Karen's Chicken Run Fence & Gate", location: "Santa Clara County, CA", published: true, images: ["/assets/jobs/fynn-karen-fence.jpg", "/assets/jobs/fynn-karen-fence.jpg"] },
   { title: "Kay-Marie's Tomato Protection Squirrel Excluder", location: "Santa Clara County, CA", published: true, images: ["/assets/jobs/07_kay_excluder.jpg", "/assets/jobs/07_kay_excluder.jpg"] },

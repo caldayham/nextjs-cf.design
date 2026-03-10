@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Menu, X, ChevronDown } from '@/components/ui/Icons'
 import { CASE_STUDIES } from '@/data/case-studies'
+import { SPECIALTIES } from '@/data/specialties'
 
 interface NavProps {
   onInquiry: () => void
@@ -13,7 +14,9 @@ export default function Nav({ onInquiry }: NavProps) {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const [csOpen, setCsOpen] = useState(false)
+  const [spOpen, setSpOpen] = useState(false)
   const [mobileCsOpen, setMobileCsOpen] = useState(false)
+  const [mobileSpOpen, setMobileSpOpen] = useState(false)
   const pathname = usePathname()
 
   useEffect(() => {
@@ -50,6 +53,20 @@ export default function Nav({ onInquiry }: NavProps) {
               </div>
             )}
           </div>
+          <div className="relative" onMouseEnter={() => setSpOpen(true)} onMouseLeave={() => setSpOpen(false)}>
+            <button className="text-xs font-semibold tracking-[0.2em] uppercase transition-colors text-white/80 hover:text-white flex items-center gap-1 cursor-pointer pb-2 -mb-2">
+              Specialties <ChevronDown className="w-3 h-3 transition-transform" style={spOpen ? { transform: 'rotate(180deg)' } : undefined} />
+            </button>
+            {spOpen && (
+              <div className="absolute top-full right-0 pt-2">
+                <div className="bg-arch-black/95 backdrop-blur-md border border-white/10 py-2 whitespace-nowrap max-h-[70vh] overflow-y-auto">
+                  {SPECIALTIES.map((sp) => (
+                    <Link key={sp.href} href={sp.href} className="block px-4 py-2.5 text-xs font-semibold tracking-[0.15em] uppercase text-white/70 hover:text-white hover:bg-white/10 transition-colors" onClick={() => setSpOpen(false)}>{sp.title}</Link>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
           <button onClick={onInquiry} className="px-6 py-2.5 rounded-sm text-xs font-bold tracking-[0.15em] uppercase border transition-all border-white text-white hover:bg-white hover:text-arch-black cursor-pointer">Start Project</button>
         </div>
         <button onClick={() => setIsOpen(!isOpen)} className="md:hidden text-white">{isOpen ? <X /> : <Menu />}</button>
@@ -67,6 +84,18 @@ export default function Nav({ onInquiry }: NavProps) {
               <div className="flex flex-col space-y-3 pt-3">
                 {CASE_STUDIES.map((cs) => (
                   <Link key={cs.href} href={cs.href} onClick={() => setIsOpen(false)} className="text-base font-serif text-arch-mineral border-b border-gray-100 pb-3 pl-4">{cs.title}</Link>
+                ))}
+              </div>
+            )}
+          </div>
+          <div>
+            <button onClick={() => setMobileSpOpen(!mobileSpOpen)} className="flex items-center justify-between w-full text-lg font-serif text-arch-charcoal border-b border-gray-100 pb-3 cursor-pointer">
+              Specialties <ChevronDown className="w-4 h-4 transition-transform" style={mobileSpOpen ? { transform: 'rotate(180deg)' } : undefined} />
+            </button>
+            {mobileSpOpen && (
+              <div className="flex flex-col space-y-3 pt-3">
+                {SPECIALTIES.map((sp) => (
+                  <Link key={sp.href} href={sp.href} onClick={() => setIsOpen(false)} className="text-base font-serif text-arch-mineral border-b border-gray-100 pb-3 pl-4">{sp.title}</Link>
                 ))}
               </div>
             )}
