@@ -85,9 +85,15 @@ When using an AI agent to assemble a case study page:
 - Write descriptive alt text for every image
 
 ### Step 5: Assemble the page
+- Select the single best finished landscape photo as the hero
 - Create `app/case-studies/{slug}/page.tsx` using the template below
 - Update `data/case-studies.ts` to add the new entry
 - Verify with `npm run build`
+
+### Step 6: Hero collage (post-assembly)
+- After the page is fully assembled and the user can see it, ask: **"Would you like to create a hero collage for this post? If so, which two images would you like to use?"**
+- If yes, create the collage following the rules in Section 8 and swap out the hero image
+- If no, keep the single hero photo
 
 ---
 
@@ -200,3 +206,20 @@ Note: First h2 on the page should omit `mt-16`.
 - [ ] Entry added to `data/case-studies.ts`
 - [ ] `npm run build` passes
 - [ ] Visual check on desktop and mobile
+
+---
+
+## 8. Hero Collage Creation
+
+When creating a side-by-side hero collage from two images using Python (Pillow), follow these rules:
+
+1. **Scale both images to the same height** — use the natural aspect ratio of each, do not force them into equal-width panels
+2. **No padding, no letterboxing, no black bars** — each image fills its space edge-to-edge with no empty space around it
+3. **20px white vertical line** between the two images as a separator
+4. **Total width = left image width + 20px gap + right image width** — let the natural proportions determine the final dimensions, don't force a target width
+5. **Left image goes on the left, right image on the right** — paste them flush against their respective edges
+6. Save both a full-size version and an 800px-wide mobile version in the `mobile/` subfolder
+
+The collage should look like two photos laid next to each other on a white table with a thin white line between them — nothing more.
+
+**Common mistake to avoid:** Do not pre-define a fixed canvas size and then try to fit images into panels. This causes cropping, zooming, and leftover space that becomes black bars. Instead, scale to the same height and let widths be whatever they naturally are.

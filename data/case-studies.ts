@@ -35,4 +35,11 @@ export const CASE_STUDIES: CaseStudy[] = [
     location: 'Palo Alto, CA',
     description: 'A custom redwood potting station with corrugated steel roof, tool rack, and slatted storage — built in two days.',
   },
+  {
+    title: "Robin's Composite Deck & Awning",
+    href: '/case-studies/composite-deck-awning',
+    image: '/case-studies/composite-deck-awning/IMG_3073.PNG',
+    location: 'Palo Alto, CA',
+    description: 'A mahogany Timbertech composite deck and redwood awning with corrugated stainless roof — replacing a critter-infested deck.',
+  },
 ]
