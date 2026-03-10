@@ -2,7 +2,6 @@
 import { useRef, useState, useEffect, useCallback } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Reveal } from '@/components/ui/Reveal'
 import { ArrowRight, MapPin } from '@/components/ui/Icons'
 import type { CaseStudy } from '@/data/case-studies'
 
@@ -53,39 +52,27 @@ export default function SuggestedCaseStudies({ studies }: { studies: CaseStudy[]
   }, [handleScroll])
 
   return (
-    <>
-      {/* Mobile: horizontal swipe */}
-      <div className="md:hidden">
-        <div
-          ref={scrollRef}
-          className="flex gap-4 overflow-x-auto snap-x snap-mandatory no-scrollbar pb-2 -mx-6 px-6"
-        >
-          {studies.map((cs) => (
-            <div key={cs.href} className="snap-start shrink-0 w-[85vw]">
-              <CaseStudyCard cs={cs} />
-            </div>
-          ))}
-        </div>
-        {studies.length > 1 && (
-          <div className="flex justify-center gap-2 mt-6">
-            {studies.map((cs, idx) => (
-              <span
-                key={cs.href}
-                className={`w-2 h-2 rounded-full transition-colors ${idx === activeIndex ? 'bg-arch-mineral' : 'bg-arch-stone/40'}`}
-              />
-            ))}
-          </div>
-        )}
-      </div>
-
-      {/* Desktop: grid */}
-      <div className={`hidden md:grid gap-6 ${studies.length === 1 ? 'max-w-sm' : 'md:grid-cols-2 max-w-2xl'}`}>
-        {studies.map((cs, idx) => (
-          <Reveal key={cs.href} delay={idx * 150}>
+    <div>
+      <div
+        ref={scrollRef}
+        className="flex gap-4 overflow-x-auto snap-x snap-mandatory no-scrollbar pb-2 -mx-6 px-6"
+      >
+        {studies.map((cs) => (
+          <div key={cs.href} className="snap-start shrink-0 w-[85vw] md:w-[384px]">
             <CaseStudyCard cs={cs} />
-          </Reveal>
+          </div>
         ))}
       </div>
-    </>
+      {studies.length > 1 && (
+        <div className="flex justify-center gap-2 mt-6">
+          {studies.map((cs, idx) => (
+            <span
+              key={cs.href}
+              className={`w-2 h-2 rounded-full transition-colors ${idx === activeIndex ? 'bg-arch-mineral' : 'bg-arch-stone/40'}`}
+            />
+          ))}
+        </div>
+      )}
+    </div>
   )
 }

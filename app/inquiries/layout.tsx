@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'Request a Consultation',
+  title: 'Quality Bay Area Construction!',
   description: 'Get in touch with CF Design for custom construction in the Bay Area.',
 }
 

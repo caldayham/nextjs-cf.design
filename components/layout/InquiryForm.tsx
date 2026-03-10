@@ -22,7 +22,7 @@ export default function InquiryForm() {
         <h2 className="text-xs font-bold tracking-[0.25em] text-arch-stone uppercase mb-8">CF Design</h2>
         <h3 className="text-4xl md:text-5xl font-serif mb-8 leading-tight">Get Solutions.</h3>
         <p className="text-arch-stone/60 mb-4 leading-relaxed font-light text-sm">Once submitted, Cal or Fynn will send you a quick text message within 24 hours :)</p>
-        <p className="text-arch-stone/60 mb-4 leading-relaxed font-light text-sm">We can't meet with everyone who reaches out but we will always point you in the right direction.</p>
+        <p className="text-arch-stone/60 mb-4 leading-relaxed font-light text-sm">We can't meet with everyone who reaches out, but if we're busy we will always point you in the right direction.</p>
       </div>
       <div className="flex flex-col lg:flex-row gap-16 md:gap-20">
         {/* Left column */}
@@ -31,7 +31,7 @@ export default function InquiryForm() {
             <h2 className="text-xs font-bold tracking-[0.25em] text-arch-stone uppercase mb-8">CF Design</h2>
             <h3 className="text-4xl md:text-5xl font-serif mb-8 leading-tight">Get Solutions.</h3>
             <p className="text-arch-stone/60 mb-12 leading-relaxed font-light text-sm md:text-base">Once submitted, Cal or Fynn will send you a quick text message within 24 hours :)</p>
-            <p className="text-arch-stone/60 mb-12 leading-relaxed font-light text-sm md:text-base">We can't meet with everyone who reaches out but we will always point you in the right direction.</p>
+            <p className="text-arch-stone/60 mb-12 leading-relaxed font-light text-sm md:text-base">We can't meet with everyone who reaches out, but if we're busy we will always point you in the right direction.</p>
           </div>
           <div className="space-y-6 text-arch-stone">
             <div className="flex items-center gap-4"><MapPin className="w-5 h-5 text-white" /><span>Serving San Mateo &amp; Santa Clara County</span></div>
