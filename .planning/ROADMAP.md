@@ -30,11 +30,11 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. Local knowledge data (regulations, permit info, neighborhood details) is queryable per city
   4. Each case study is mapped to nearby cities so pages can reference real completed projects
   5. Target keyword data exists for every city+service combination, usable for meta tag generation
-**Plans**: TBD
+**Plans**: 01-01, 01-02
 
 Plans:
-- [ ] 01-01: TBD
-- [ ] 01-02: TBD
+- [x] 01-01: City data (15 cities) + Service data (11 specialties) — Wave 1
+- [ ] 01-02: Local knowledge, case study proximity, keywords, helpers — Wave 2
 
 ### Phase 2: Content Generation Pipeline
 **Goal**: A standalone script generates unique, high-quality page content for every city/service combination, stored as committed JSON files
@@ -100,7 +100,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Data Foundation | 0/0 | Not started | - |
+| 1. Data Foundation | 1/2 | In Progress | - |
 | 2. Content Generation Pipeline | 0/0 | Not started | - |
 | 3. Page Template and SEO Markup | 0/0 | Not started | - |
 | 4. Internal Linking and Sitemap | 0/0 | Not started | - |
