@@ -26,14 +26,14 @@ Requirements for PSEO milestone. Each maps to roadmap phases.
 
 - [ ] **PAGE-01**: PSEO route handler at `/[city]/[service]/` using generateStaticParams for all city+service combinations
 - [ ] **PAGE-02**: Responsive page layout with hero, content sections, CTA, and relevant case study photos
-- [ ] **PAGE-03**: Each page links to the corresponding specialty page (spoke → pillar) and nearby case studies
+- [ ] **PAGE-03**: Each page links to the corresponding specialty page (spoke -> pillar) and nearby case studies
 - [ ] **PAGE-04**: Each page includes a clear inquiry/consultation CTA
 
 ### SEO Optimization
 
 - [ ] **SEO-01**: LocalBusiness + Service JSON-LD schema markup on every PSEO page
 - [ ] **SEO-02**: Unique meta title and description per page optimized for target keywords
-- [ ] **SEO-03**: Bidirectional internal linking — specialty pages link down to city-specific PSEO pages
+- [ ] **SEO-03**: Bidirectional internal linking -- specialty pages link down to city-specific PSEO pages
 - [ ] **SEO-04**: Sitemap.ts extended to include all PSEO pages with proper lastmod dates
 - [ ] **SEO-05**: Open Graph tags per page for social sharing
 
@@ -41,7 +41,7 @@ Requirements for PSEO milestone. Each maps to roadmap phases.
 
 - [ ] **LNCH-01**: Graduated rollout deploying 20-30 pages per batch with indexing verification between batches
 - [ ] **LNCH-02**: Search Console setup and sitemap submission for PSEO pages
-- [ ] **LNCH-03**: Cannibalization monitoring — verify PSEO pages don't steal rankings from existing specialty pages
+- [ ] **LNCH-03**: Cannibalization monitoring -- verify PSEO pages don't steal rankings from existing specialty pages
 
 ## v2 Requirements
 
@@ -63,7 +63,7 @@ Deferred to future milestone. Tracked but not in current roadmap.
 
 | Feature | Reason |
 |---------|--------|
-| Build-time AI generation | Non-deterministic builds, API costs per deploy, fragile — pre-generate and commit instead |
+| Build-time AI generation | Non-deterministic builds, API costs per deploy, fragile -- pre-generate and commit instead |
 | Separate pages per intent variation | Google penalizes doorway pages; handle all intents on one comprehensive page per city+service |
 | Real-time content updates | Static generation is sufficient; content refreshed manually via regeneration script |
 | Paid advertising integration | Organic-first approach for this milestone |
@@ -75,33 +75,33 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| DATA-01 | — | Pending |
-| DATA-02 | — | Pending |
-| DATA-03 | — | Pending |
-| DATA-04 | — | Pending |
-| DATA-05 | — | Pending |
-| CONT-01 | — | Pending |
-| CONT-02 | — | Pending |
-| CONT-03 | — | Pending |
-| CONT-04 | — | Pending |
-| PAGE-01 | — | Pending |
-| PAGE-02 | — | Pending |
-| PAGE-03 | — | Pending |
-| PAGE-04 | — | Pending |
-| SEO-01 | — | Pending |
-| SEO-02 | — | Pending |
-| SEO-03 | — | Pending |
-| SEO-04 | — | Pending |
-| SEO-05 | — | Pending |
-| LNCH-01 | — | Pending |
-| LNCH-02 | — | Pending |
-| LNCH-03 | — | Pending |
+| DATA-01 | Phase 1 | Pending |
+| DATA-02 | Phase 1 | Pending |
+| DATA-03 | Phase 1 | Pending |
+| DATA-04 | Phase 1 | Pending |
+| DATA-05 | Phase 1 | Pending |
+| CONT-01 | Phase 2 | Pending |
+| CONT-02 | Phase 2 | Pending |
+| CONT-03 | Phase 2 | Pending |
+| CONT-04 | Phase 2 | Pending |
+| PAGE-01 | Phase 3 | Pending |
+| PAGE-02 | Phase 3 | Pending |
+| PAGE-03 | Phase 3 | Pending |
+| PAGE-04 | Phase 3 | Pending |
+| SEO-01 | Phase 3 | Pending |
+| SEO-02 | Phase 3 | Pending |
+| SEO-03 | Phase 4 | Pending |
+| SEO-04 | Phase 4 | Pending |
+| SEO-05 | Phase 3 | Pending |
+| LNCH-01 | Phase 5 | Pending |
+| LNCH-02 | Phase 5 | Pending |
+| LNCH-03 | Phase 5 | Pending |
 
 **Coverage:**
 - v1 requirements: 21 total
-- Mapped to phases: 0
-- Unmapped: 21 ⚠️
+- Mapped to phases: 21
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-03-10*
-*Last updated: 2026-03-10 after initial definition*
+*Last updated: 2026-03-10 after roadmap creation*
