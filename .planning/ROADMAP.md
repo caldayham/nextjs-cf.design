@@ -45,11 +45,11 @@ Plans:
   2. Generated content files are committed to the repo and not generated at build time
   3. Each generated page contains at least 200-300 words of city-specific prose with local references (neighborhoods, landmarks, housing stock)
   4. A validation step flags any page pair with less than 40% unique content for the same service across different cities
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 02-01: TBD
-- [ ] 02-02: TBD
+- [ ] 02-01: Generation script + Gemini SDK + prompt builder (CONT-01, CONT-02, CONT-04) — Wave 1
+- [ ] 02-02: Content validation with uniqueness + word count (CONT-03) — Wave 2
 
 ### Phase 3: Page Template and SEO Markup
 **Goal**: Every city/service combination renders as a complete, responsive PSEO page with structured data and optimized metadata
