@@ -11,9 +11,9 @@ Requirements for PSEO milestone. Each maps to roadmap phases.
 
 - [x] **DATA-01**: City data system with 15 Peninsula cities including slugs, display names, neighborhoods, and geographic characteristics
 - [x] **DATA-02**: Service data system mapping 11 specialties with keywords, descriptions, and category metadata
-- [ ] **DATA-03**: Local knowledge data with city-specific regulations, permit requirements, and neighborhood details
-- [ ] **DATA-04**: Case study proximity mapping linking each case study to nearby cities for photo/project references
-- [ ] **DATA-05**: Keyword/intent data tracking target keywords per city+service combination for meta tags and SEO optimization
+- [x] **DATA-03**: Local knowledge data with city-specific regulations, permit requirements, and neighborhood details
+- [x] **DATA-04**: Case study proximity mapping linking each case study to nearby cities for photo/project references
+- [x] **DATA-05**: Keyword/intent data tracking target keywords per city+service combination for meta tags and SEO optimization
 
 ### Content Generation
 
@@ -77,9 +77,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 |-------------|-------|--------|
 | DATA-01 | Phase 1 | Complete |
 | DATA-02 | Phase 1 | Complete |
-| DATA-03 | Phase 1 | Pending |
-| DATA-04 | Phase 1 | Pending |
-| DATA-05 | Phase 1 | Pending |
+| DATA-03 | Phase 1 | Complete |
+| DATA-04 | Phase 1 | Complete |
+| DATA-05 | Phase 1 | Complete |
 | CONT-01 | Phase 2 | Pending |
 | CONT-02 | Phase 2 | Pending |
 | CONT-03 | Phase 2 | Pending |

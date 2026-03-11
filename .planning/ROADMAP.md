@@ -12,7 +12,7 @@ This roadmap delivers a programmatic SEO system that generates high-quality, uni
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Data Foundation** - City, service, and local knowledge data systems with case study and keyword mappings
+- [x] **Phase 1: Data Foundation** - City, service, and local knowledge data systems with case study and keyword mappings
 - [ ] **Phase 2: Content Generation Pipeline** - AI-powered content generation script producing unique, committed JSON content per city/service
 - [ ] **Phase 3: Page Template and SEO Markup** - PSEO route handler, responsive layout, schema markup, and per-page metadata
 - [ ] **Phase 4: Internal Linking and Sitemap** - Bidirectional hub-spoke linking and sitemap extension for PSEO pages
@@ -34,7 +34,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 Plans:
 - [x] 01-01: City data (15 cities) + Service data (11 specialties) — Wave 1
-- [ ] 01-02: Local knowledge, case study proximity, keywords, helpers — Wave 2
+- [x] 01-02: Local knowledge, case study proximity, keywords, helpers — Wave 2
 
 ### Phase 2: Content Generation Pipeline
 **Goal**: A standalone script generates unique, high-quality page content for every city/service combination, stored as committed JSON files
@@ -100,7 +100,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Data Foundation | 1/2 | In Progress | - |
+| 1. Data Foundation | 2/2 | Complete | 2026-03-11 |
 | 2. Content Generation Pipeline | 0/0 | Not started | - |
 | 3. Page Template and SEO Markup | 0/0 | Not started | - |
 | 4. Internal Linking and Sitemap | 0/0 | Not started | - |

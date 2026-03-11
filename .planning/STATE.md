@@ -9,29 +9,29 @@ See: .planning/PROJECT.md (updated 2026-03-10)
 
 ## Current Position
 
-Phase: 1 of 5 (Data Foundation)
-Plan: 1 of 2 in current phase
-Status: Executing
-Last activity: 2026-03-11 -- Completed 01-01 (city & service data)
+Phase: 1 of 5 (Data Foundation) -- COMPLETE
+Plan: 2 of 2 in current phase
+Status: Phase Complete
+Last activity: 2026-03-11 -- Completed 01-02 (extended data & helpers)
 
-Progress: [█░░░░░░░░░] 10%
+Progress: [██░░░░░░░░] 20%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 1
-- Average duration: 2min
-- Total execution time: 0.03 hours
+- Total plans completed: 2
+- Average duration: 3min
+- Total execution time: 0.1 hours
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| 01-data-foundation | 1 | 2min | 2min |
+| 01-data-foundation | 2 | 6min | 3min |
 
 **Recent Trend:**
-- Last 5 plans: 01-01 (2min)
-- Trend: Starting
+- Last 5 plans: 01-01 (2min), 01-02 (4min)
+- Trend: Steady
 
 *Updated after each plan completion*
 
@@ -48,6 +48,9 @@ Recent decisions affecting current work:
 - [Roadmap]: Route structure /[city]/[service]/ using generateStaticParams
 - [01-01]: Cities ordered north-to-south geographically; Hillsborough/Los Altos Hills have empty neighborhoods arrays
 - [01-01]: Service categories: carpentry (1), outdoor (4), maintenance (5), design (1)
+- [01-02]: Runtime validation in local-knowledge.ts catches missing city data at module load
+- [01-02]: All nearbyCities limited to valid city slugs (removed 'stanford' from plan suggestion)
+- [01-02]: getPageData is the single entry point for assembling PSEO page data
 
 ### Pending Todos
 
@@ -56,11 +59,11 @@ Recent decisions affecting current work:
 ### Blockers/Concerns
 
 - Vercel plan upgrade ($20/month Pro) must happen before Phase 5 deployment
-- City-specific local data (neighborhoods, landmarks, housing stock) needs manual curation in Phase 1
+- City-specific local data COMPLETE -- 15 cities with unique local knowledge curated
 - AI prompt quality is highest-risk area -- Phase 2 needs iterative experimentation
 
 ## Session Continuity
 
 Last session: 2026-03-11
-Stopped at: Completed 01-01-PLAN.md (city & service data)
+Stopped at: Completed 01-02-PLAN.md (extended data & helpers) -- Phase 1 complete
 Resume file: None
