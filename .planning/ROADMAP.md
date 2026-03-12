@@ -46,10 +46,10 @@ Plans:
   2. Keywords, descriptions, and related services are populated for all new services
   3. helpers.ts generates all 240 city+service combinations correctly
   4. Existing specialty page links (href) are preserved for services that map to current specialty pages
-**Plans**: TBD
+**Plans**: 1 plan
 
 Plans:
-- [ ] 1.1-01: TBD
+- [ ] 01.1-01-PLAN.md — Expand services from 11 to 16 and update all downstream data references
 
 ### Phase 2: Content Generation Pipeline
 **Goal**: A multi-step pipeline generates authentic, high-quality page content and FAQs for every city/service combination, stored as committed JSON files
@@ -117,7 +117,7 @@ Phases execute in numeric order: 1 -> 1.1 -> 2 -> 3 -> 4 -> 5
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Data Foundation | 2/2 | Complete | 2026-03-11 |
-| 1.1. Service Taxonomy Expansion | 0/0 | Not started | - |
+| 1.1. Service Taxonomy Expansion | 0/1 | Not started | - |
 | 2. Content Generation Pipeline | 0/0 | Not started | - |
 | 3. Page Template and SEO Markup | 0/0 | Not started | - |
 | 4. Internal Linking and Sitemap | 0/0 | Not started | - |
