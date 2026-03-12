@@ -3,9 +3,9 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: unknown
-last_updated: "2026-03-11T22:27:59.250Z"
+last_updated: "2026-03-11T23:00:00.000Z"
 progress:
-  total_phases: 1
+  total_phases: 6
   completed_phases: 1
   total_plans: 2
   completed_plans: 2
@@ -18,16 +18,16 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-10)
 
 **Core value:** Generate qualified customer inquiries by showcasing craftsmanship and building trust through real project case studies and service expertise.
-**Current focus:** Phase 1: Data Foundation
+**Current focus:** Phase 1.1: Service Taxonomy Expansion
 
 ## Current Position
 
-Phase: 1 of 5 (Data Foundation) -- COMPLETE
-Plan: 2 of 2 in current phase
-Status: Phase Complete
-Last activity: 2026-03-11 -- Completed 01-02 (extended data & helpers)
+Phase: 1.1 of 5 (Service Taxonomy Expansion) -- NOT STARTED
+Plan: 0 of TBD in current phase
+Status: Ready to plan
+Last activity: 2026-03-11 -- Architecture pivot: expanded services (11→16), redesigned content pipeline, pulled FAQs to v1
 
-Progress: [██░░░░░░░░] 20%
+Progress: [██░░░░░░░░] 17%
 
 ## Performance Metrics
 
@@ -55,10 +55,15 @@ Progress: [██░░░░░░░░] 20%
 Decisions are logged in PROJECT.md Key Decisions table.
 Recent decisions affecting current work:
 
-- [Roadmap]: Content generation pipeline runs separately from Next.js build (pre-generate and commit JSON)
+- [Roadmap]: Content generation pipeline runs in separate project (pseo-content-gen/), not in Next.js project
 - [Roadmap]: Graduated rollout mandatory (20-30 pages per batch)
 - [Roadmap]: Vercel Hobby to Pro upgrade needed before Phase 5 deployment
 - [Roadmap]: Route structure /[city]/[service]/ using generateStaticParams
+- [Pivot]: Services expanded from 11 broad → 16 intent-specific (split fences/gates/decks, hardscape, painting)
+- [Pivot]: Dual-model pipeline — Gemini for research/data, Claude for content writing
+- [Pivot]: FAQs pulled from v2 to v1 (FAQPage schema is high-ROI)
+- [Pivot]: Content tone should be authentic local craftsperson, not SEO-optimized. No permit/regulation references.
+- [Pivot]: Material-specific naming where it differentiates (Redwood Garden Boxes, Redwood Fence Installation)
 - [01-01]: Cities ordered north-to-south geographically; Hillsborough/Los Altos Hills have empty neighborhoods arrays
 - [01-01]: Service categories: carpentry (1), outdoor (4), maintenance (5), design (1)
 - [01-02]: Runtime validation in local-knowledge.ts catches missing city data at module load
@@ -72,11 +77,10 @@ Recent decisions affecting current work:
 ### Blockers/Concerns
 
 - Vercel plan upgrade ($20/month Pro) must happen before Phase 5 deployment
-- City-specific local data COMPLETE -- 15 cities with unique local knowledge curated
-- AI prompt quality is highest-risk area -- Phase 2 needs iterative experimentation
+- Content generation scripts live in ~/Desktop/cf.design/pseo-content-gen/ (separate from Next.js project)
 
 ## Session Continuity
 
 Last session: 2026-03-11
-Stopped at: Completed 01-02-PLAN.md (extended data & helpers) -- Phase 1 complete
+Stopped at: Architecture pivot complete — roadmap and requirements updated. Next: plan Phase 1.1 (service taxonomy expansion)
 Resume file: None
