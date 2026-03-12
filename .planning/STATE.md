@@ -2,13 +2,13 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: unknown
-last_updated: "2026-03-12T03:56:44.024Z"
+status: in-progress
+last_updated: "2026-03-12T04:25:38.000Z"
 progress:
-  total_phases: 2
+  total_phases: 5
   completed_phases: 2
-  total_plans: 3
-  completed_plans: 3
+  total_plans: 4
+  completed_plans: 4
 ---
 
 # Project State
@@ -18,16 +18,16 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-10)
 
 **Core value:** Generate qualified customer inquiries by showcasing craftsmanship and building trust through real project case studies and service expertise.
-**Current focus:** Phase 1.1: Service Taxonomy Expansion
+**Current focus:** Phase 2: Content Generation Pipeline
 
 ## Current Position
 
-Phase: 1.1 of 5 (Service Taxonomy Expansion) -- COMPLETE
-Plan: 1 of 1 in current phase
-Status: Phase 1.1 complete
-Last activity: 2026-03-12 -- Expanded service taxonomy from 11 to 16 intent-specific services
+Phase: 2 of 5 (Content Generation Pipeline)
+Plan: 1 of 2 in current phase -- COMPLETE
+Status: Plan 02-01 complete, proceeding to 02-02
+Last activity: 2026-03-12 -- Built dual-model pipeline foundation (schemas, Claude module, prompt refactoring)
 
-Progress: [███░░░░░░░] 25%
+Progress: [████░░░░░░] 35%
 
 ## Performance Metrics
 
@@ -42,9 +42,10 @@ Progress: [███░░░░░░░] 25%
 |-------|-------|-------|----------|
 | 01-data-foundation | 2 | 6min | 3min |
 | 01.1-service-taxonomy-expansion | 1 | 2min | 2min |
+| 02-content-generation-pipeline | 1 | 3min | 3min |
 
 **Recent Trend:**
-- Last 5 plans: 01-01 (2min), 01-02 (4min), 01.1-01 (2min)
+- Last 5 plans: 01-01 (2min), 01-02 (4min), 01.1-01 (2min), 02-01 (3min)
 - Trend: Steady
 
 *Updated after each plan completion*
@@ -72,6 +73,9 @@ Recent decisions affecting current work:
 - [01-02]: getPageData is the single entry point for assembling PSEO page data
 - [01.1-01]: Split services share parent specialty href for backward compatibility
 - [01.1-01]: Removed deck-related keywords from refinishing to avoid overlap with deck-repair-refinishing
+- [02-01]: Used tool_use pattern for Claude structured output (reliable across all models, not beta-dependent)
+- [02-01]: Deleted old prompts.ts entirely rather than deprecating (clean break for Plan 02-02)
+- [02-01]: Removed permits/hoaNotes from research prompt data injection entirely per user tone feedback
 
 ### Pending Todos
 
@@ -85,5 +89,5 @@ Recent decisions affecting current work:
 ## Session Continuity
 
 Last session: 2026-03-12
-Stopped at: Completed 01.1-01-PLAN.md (service taxonomy expansion). Phase 1.1 complete.
+Stopped at: Completed 02-01-PLAN.md (pipeline foundation). Proceeding to 02-02.
 Resume file: None

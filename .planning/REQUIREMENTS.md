@@ -18,11 +18,11 @@ Requirements for PSEO milestone. Each maps to roadmap phases.
 
 ### Content Generation
 
-- [ ] **CONT-01**: Multi-step content generation pipeline (Gemini for research/data, Claude for writing) producing authentic page content per city/service combination
+- [x] **CONT-01**: Multi-step content generation pipeline (Gemini for research/data, Claude for writing) producing authentic page content per city/service combination
 - [ ] **CONT-02**: Generated content committed to repo as JSON files (not generated at build time)
 - [ ] **CONT-03**: Content validation that flags thin or overly similar content before deployment
-- [ ] **CONT-04**: Each generated page reads like it was written by a passionate local craftsperson — natural SEO signals (zip codes, streets, neighborhoods) woven in organically
-- [ ] **CONT-05**: FAQ content generated per page (3-5 questions with fact-first answers)
+- [x] **CONT-04**: Each generated page reads like it was written by a passionate local craftsperson — natural SEO signals (zip codes, streets, neighborhoods) woven in organically
+- [x] **CONT-05**: FAQ content generated per page (3-5 questions with fact-first answers)
 
 ### Page Template
 
@@ -83,11 +83,11 @@ Which phases cover which requirements. Updated during roadmap creation.
 | DATA-04 | Phase 1 | Complete |
 | DATA-05 | Phase 1 | Complete |
 | DATA-06 | Phase 1.1 | Complete |
-| CONT-01 | Phase 2 | Pending |
+| CONT-01 | Phase 2 | Complete |
 | CONT-02 | Phase 2 | Pending |
 | CONT-03 | Phase 2 | Pending |
-| CONT-04 | Phase 2 | Pending |
-| CONT-05 | Phase 2 | Pending |
+| CONT-04 | Phase 2 | Complete |
+| CONT-05 | Phase 2 | Complete |
 | PAGE-01 | Phase 3 | Pending |
 | PAGE-02 | Phase 3 | Pending |
 | PAGE-03 | Phase 3 | Pending |
