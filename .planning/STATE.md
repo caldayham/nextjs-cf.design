@@ -2,13 +2,13 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: unknown
-last_updated: "2026-03-11T23:00:00.000Z"
+status: in-progress
+last_updated: "2026-03-12T03:53:00.000Z"
 progress:
   total_phases: 6
   completed_phases: 1
-  total_plans: 2
-  completed_plans: 2
+  total_plans: 3
+  completed_plans: 3
 ---
 
 # Project State
@@ -22,28 +22,29 @@ See: .planning/PROJECT.md (updated 2026-03-10)
 
 ## Current Position
 
-Phase: 1.1 of 5 (Service Taxonomy Expansion) -- NOT STARTED
-Plan: 0 of TBD in current phase
-Status: Ready to plan
-Last activity: 2026-03-11 -- Architecture pivot: expanded services (11→16), redesigned content pipeline, pulled FAQs to v1
+Phase: 1.1 of 5 (Service Taxonomy Expansion) -- COMPLETE
+Plan: 1 of 1 in current phase
+Status: Phase 1.1 complete
+Last activity: 2026-03-12 -- Expanded service taxonomy from 11 to 16 intent-specific services
 
-Progress: [██░░░░░░░░] 17%
+Progress: [███░░░░░░░] 25%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 2
+- Total plans completed: 3
 - Average duration: 3min
-- Total execution time: 0.1 hours
+- Total execution time: 0.13 hours
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 01-data-foundation | 2 | 6min | 3min |
+| 01.1-service-taxonomy-expansion | 1 | 2min | 2min |
 
 **Recent Trend:**
-- Last 5 plans: 01-01 (2min), 01-02 (4min)
+- Last 5 plans: 01-01 (2min), 01-02 (4min), 01.1-01 (2min)
 - Trend: Steady
 
 *Updated after each plan completion*
@@ -69,6 +70,8 @@ Recent decisions affecting current work:
 - [01-02]: Runtime validation in local-knowledge.ts catches missing city data at module load
 - [01-02]: All nearbyCities limited to valid city slugs (removed 'stanford' from plan suggestion)
 - [01-02]: getPageData is the single entry point for assembling PSEO page data
+- [01.1-01]: Split services share parent specialty href for backward compatibility
+- [01.1-01]: Removed deck-related keywords from refinishing to avoid overlap with deck-repair-refinishing
 
 ### Pending Todos
 
@@ -81,6 +84,6 @@ Recent decisions affecting current work:
 
 ## Session Continuity
 
-Last session: 2026-03-11
-Stopped at: Architecture pivot complete — roadmap and requirements updated. Next: plan Phase 1.1 (service taxonomy expansion)
+Last session: 2026-03-12
+Stopped at: Completed 01.1-01-PLAN.md (service taxonomy expansion). Phase 1.1 complete.
 Resume file: None

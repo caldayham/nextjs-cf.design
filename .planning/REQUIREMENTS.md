@@ -14,7 +14,7 @@ Requirements for PSEO milestone. Each maps to roadmap phases.
 - [x] **DATA-03**: Local knowledge data with city-specific neighborhood details
 - [x] **DATA-04**: Case study proximity mapping linking each case study to nearby cities for photo/project references
 - [x] **DATA-05**: Keyword/intent data tracking target keywords per city+service combination for meta tags and SEO optimization
-- [ ] **DATA-06**: Expanded service taxonomy (16 services split by search intent) with updated helpers and keyword mappings
+- [x] **DATA-06**: Expanded service taxonomy (16 services split by search intent) with updated helpers and keyword mappings
 
 ### Content Generation
 
@@ -82,7 +82,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | DATA-03 | Phase 1 | Complete |
 | DATA-04 | Phase 1 | Complete |
 | DATA-05 | Phase 1 | Complete |
-| DATA-06 | Phase 1.1 | Pending |
+| DATA-06 | Phase 1.1 | Complete |
 | CONT-01 | Phase 2 | Pending |
 | CONT-02 | Phase 2 | Pending |
 | CONT-03 | Phase 2 | Pending |
