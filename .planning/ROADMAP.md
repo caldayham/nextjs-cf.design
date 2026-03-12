@@ -61,11 +61,11 @@ Plans:
   3. Each page reads like a passionate local craftsperson wrote it, with natural local signals (neighborhoods, streets, zip codes)
   4. Each page includes 3-5 FAQs with fact-first answers
   5. Validation flags overly similar content across cities for the same service
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 02-01: TBD
-- [ ] 02-02: TBD
+- [ ] 02-01: Schema + Claude module + prompt refactor (dual-model foundation) — Wave 1
+- [ ] 02-02: Pipeline integration + validation + sample generation — Wave 2
 
 ### Phase 3: Page Template and SEO Markup
 **Goal**: Every city/service combination renders as a complete, responsive PSEO page with FAQ section, structured data, and optimized metadata
