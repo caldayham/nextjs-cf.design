@@ -38,7 +38,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     description: 'A sturdy redwood fence with custom gate — built in two days, including tree removal and hauling.',
     citySlug: 'palo-alto',
     nearbyCities: ['menlo-park', 'los-altos', 'mountain-view', 'atherton'],
-    serviceCategories: ['fences-gates-decks', 'tree-shrub-removal', 'demolition-hauling'],
+    serviceCategories: ['redwood-fence-installation', 'tree-shrub-removal', 'demolition-hauling'],
   },
   {
     title: "Tina's Redwood Potting Station",
@@ -48,7 +48,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     description: 'A custom redwood potting station with corrugated steel roof, tool rack, and slatted storage — built in two days.',
     citySlug: 'palo-alto',
     nearbyCities: ['menlo-park', 'los-altos', 'mountain-view', 'atherton'],
-    serviceCategories: ['custom-carpentry', 'garden-boxes'],
+    serviceCategories: ['custom-carpentry', 'redwood-garden-boxes'],
   },
   {
     title: "Robin's Composite Deck & Awning",
@@ -58,6 +58,6 @@ export const CASE_STUDIES: CaseStudy[] = [
     description: 'A mahogany Timbertech composite deck and redwood awning with corrugated stainless roof — replacing a critter-infested deck.',
     citySlug: 'palo-alto',
     nearbyCities: ['menlo-park', 'los-altos', 'mountain-view', 'atherton'],
-    serviceCategories: ['fences-gates-decks', 'custom-carpentry', 'demolition-hauling'],
+    serviceCategories: ['new-deck-construction', 'custom-carpentry', 'demolition-hauling'],
   },
 ]

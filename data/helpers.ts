@@ -5,7 +5,7 @@ import { CASE_STUDIES } from './case-studies'
 import { getKeywords } from './keywords'
 
 /**
- * Returns all 165 city+service param combinations for generateStaticParams.
+ * Returns all 240 city+service param combinations for generateStaticParams.
  */
 export function getAllCityServiceParams(): { city: string; service: string }[] {
   return CITIES.flatMap(city =>
