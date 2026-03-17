@@ -26,7 +26,7 @@ export default function KerstinRunnenPatioPage() {
         <span className="w-8 h-[1px] bg-arch-mineral" /> The Brief
       </h2>
       <h3 className="text-2xl md:text-3xl font-serif text-arch-black mt-10 mb-4 leading-tight">
-        From bumpy roots and concrete to a family dinner patio
+        From bumpy roots and concrete to a family dinner patio!
       </h3>
       <p className="text-lg md:text-xl text-arch-charcoal/80 leading-relaxed font-light mb-6">
         My brother Fynn and I built this 8x8 Rünnen patio for our neighbor Kerstin, who we met on Nextdoor. The backyard corner was rough — bumpy tree roots, protruding concrete piles from a bygone structure, and soil that wasn&apos;t going to support anything level without serious prep work.
