@@ -32,7 +32,7 @@ export default function CompositeDeckAwningPage() {
         Turning a skunk hotel into an outdoor living space
       </h3>
       <p className="text-lg md:text-xl text-arch-charcoal/80 leading-relaxed font-light mb-6">
-        Our neighbor Robin had an old deck that had seen better days — it was rotting, collapsing, and had become a hotel for possums, skunks, and rats. She wanted it replaced with something beautiful and durable: a proper composite deck with a covered awning for reading outside, rain or shine.
+        Our neighbor had an old deck that had seen better days — it was rotting, collapsing, and had become a hotel for possums, skunks, and rats. She wanted it replaced with something beautiful and durable: a proper composite deck with a covered awning for reading outside, rain or shine.
       </p>
 
       <div className="relative aspect-[4/3] w-full rounded-sm shadow-xl border-8 border-white my-10 overflow-hidden shimmer-bg">
@@ -56,8 +56,8 @@ export default function CompositeDeckAwningPage() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 my-10">
         <div className="relative aspect-[4/3] rounded-sm shadow-xl border-8 border-white overflow-hidden shimmer-bg">
           <picture>
-            <source media="(max-width: 640px)" srcSet={`${MOB}/Robin-deck-before.png`} />
-            <Image src={`${IMG}/Robin-deck-before.png`} alt="Demolishing the old rotting deck with a reciprocating saw — exposed joists and debris underneath" fill className="object-cover" sizes="(max-width: 640px) 100vw, 384px" />
+            <source media="(max-width: 640px)" srcSet={`${MOB}/deck-before.png`} />
+            <Image src={`${IMG}/deck-before.png`} alt="Demolishing the old rotting deck with a reciprocating saw — exposed joists and debris underneath" fill className="object-cover" sizes="(max-width: 640px) 100vw, 384px" />
           </picture>
         </div>
         <div className="relative aspect-[4/3] rounded-sm shadow-xl border-8 border-white overflow-hidden shimmer-bg">
@@ -124,7 +124,7 @@ export default function CompositeDeckAwningPage() {
         Awning
       </h3>
       <p className="text-lg md:text-xl text-arch-charcoal/80 leading-relaxed font-light mb-6">
-        We erected the awning substructure from redwood and topped it with corrugated stainless steel sheeting to keep the area dry. The roof has a 7.5 degree tilt to keep sticks and leaves from building up — so Robin can read outside without worrying about the weather.
+        We erected the awning substructure from redwood and topped it with corrugated stainless steel sheeting to keep the area dry. The roof has a 7.5 degree tilt to keep sticks and leaves from building up — so she can read outside without worrying about the weather.
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 my-10">
         <div className="relative aspect-[4/3] rounded-sm shadow-xl border-8 border-white overflow-hidden shimmer-bg">
@@ -168,7 +168,7 @@ export default function CompositeDeckAwningPage() {
         <span className="w-8 h-[1px] bg-arch-mineral" /> The Result
       </h2>
       <p className="text-lg md:text-xl text-arch-charcoal/80 leading-relaxed font-light mb-6">
-        From critter hotel to covered outdoor living space. The finished deck is beautiful, durable, and built to last decades — a mahogany composite surface that&apos;ll look great for 50 years, under a redwood awning that keeps Robin dry while she reads.
+        From critter hotel to covered outdoor living space. The finished deck is beautiful, durable, and built to last decades — a mahogany composite surface that&apos;ll look great for 50 years, under a redwood awning that keeps her dry while she reads.
       </p>
 
       <div className="relative aspect-[4/3] w-full rounded-sm shadow-xl border-8 border-white my-10 overflow-hidden shimmer-bg">

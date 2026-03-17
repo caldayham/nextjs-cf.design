@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install)",
+      "Bash(npx tsx scripts/generate-content.ts --dry-run)"
+    ],
+    "additionalDirectories": [
+      "/Users/caldayham/Desktop/cf.design/pseo-content-gen/scripts"
+    ]
+  }
+}

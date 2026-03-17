@@ -70,6 +70,7 @@ When using an AI agent to assemble a case study page:
 - Ask the agent to **view every image** in the folder
 - The agent should classify each photo (hero, process, detail, result, portrait)
 - The agent should describe what it sees in each photo (this becomes alt text)
+- the agent or another agent should rename every photo based on it's contense for future ease of use
 
 ### Step 3: Organize
 - Select the hero image

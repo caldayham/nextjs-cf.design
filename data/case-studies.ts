@@ -51,7 +51,17 @@ export const CASE_STUDIES: CaseStudy[] = [
     serviceCategories: ['custom-carpentry', 'redwood-garden-boxes'],
   },
   {
-    title: "Robin's Composite Deck & Awning",
+    title: "Kerstin's Rünnen Patio",
+    href: '/case-studies/kerstin-runnen-patio',
+    image: '/case-studies/kerstin-runnen-patio/hero-collage.jpg',
+    location: 'Palo Alto, CA',
+    description: 'An 8x8 IKEA Rünnen tile patio built on a proper substrate — from excavation and concrete removal to a beautiful outdoor dining space.',
+    citySlug: 'palo-alto',
+    nearbyCities: ['menlo-park', 'los-altos', 'mountain-view', 'atherton'],
+    serviceCategories: ['patio-installation', 'demolition-hauling'],
+  },
+  {
+    title: "Composite Deck & Awning",
     href: '/case-studies/composite-deck-awning',
     image: '/case-studies/composite-deck-awning/IMG_3073.PNG',
     location: 'Palo Alto, CA',

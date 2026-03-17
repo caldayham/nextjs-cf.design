@@ -12,7 +12,7 @@ export default function Purpose() {
             <Reveal delay={200}>
               <div className="relative">
                 <div className="relative aspect-[5/6] md:aspect-[3/4] rounded-sm overflow-hidden shadow-xl border-8 border-white max-w-md mx-auto">
-                  <Image src="/assets/jobs/Robin-deck-after.jpg" alt="Cal & Fynn" width={448} height={537} className="w-full h-full object-cover object-bottom" sizes="(min-width: 1024px) 448px, 100vw" />
+                  <Image src="/assets/jobs/composite-deck-after.jpg" alt="Cal & Fynn" width={448} height={537} className="w-full h-full object-cover object-bottom" sizes="(min-width: 1024px) 448px, 100vw" />
                   <div className="absolute bottom-0 left-0 right-0 bg-white/95 p-6 border-t border-arch-stone">
                     <p className="font-serif text-arch-black text-xl italic mb-1">&quot;Quality through clarity.&quot;</p>
                     <p className="text-arch-mineral text-xs uppercase tracking-widest font-bold">— Cal & Fynn</p>

@@ -16,7 +16,7 @@ export const VIBE_IMAGES = [
   "/assets/jobs/14_marsha_excluder.jpg",
   "/assets/jobs/16_kathy_crawlspace.jpg",
   "/assets/jobs/21_suzi_fence.jpg",
-  "/assets/jobs/cal-fynn-robin-deck.jpg",
+  "/assets/jobs/cal-fynn-composite-deck.jpg",
   "/assets/jobs/cal-garden-box.jpg",
   "/assets/jobs/cal-peggy-fence.jpg",
   "/assets/jobs/fynn-karen-fence.jpg",
