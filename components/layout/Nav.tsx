@@ -40,9 +40,9 @@ export default function Nav({ onInquiry }: NavProps) {
             <Link key={item} href={`/#${item.toLowerCase()}`} className="text-xs font-semibold tracking-[0.2em] uppercase transition-colors text-white/80 hover:text-white">{item}</Link>
           ))}
           <div className="relative" onMouseEnter={() => setCsOpen(true)} onMouseLeave={() => setCsOpen(false)}>
-            <button className="text-xs font-semibold tracking-[0.2em] uppercase transition-colors text-white/80 hover:text-white flex items-center gap-1 cursor-pointer pb-2 -mb-2">
+            <Link href="/case-studies" className="text-xs font-semibold tracking-[0.2em] uppercase transition-colors text-white/80 hover:text-white flex items-center gap-1 pb-2 -mb-2">
               Case Studies <ChevronDown className="w-3 h-3 transition-transform" style={csOpen ? { transform: 'rotate(180deg)' } : undefined} />
-            </button>
+            </Link>
             {csOpen && (
               <div className="absolute top-full right-0 pt-2">
                 <div className="bg-arch-black/95 backdrop-blur-md border border-white/10 py-2 whitespace-nowrap">
@@ -67,7 +67,7 @@ export default function Nav({ onInquiry }: NavProps) {
               </div>
             )}
           </div>
-          <button onClick={onInquiry} className="px-6 py-2.5 rounded-sm text-xs font-bold tracking-[0.15em] uppercase border transition-all border-white text-white hover:bg-white hover:text-arch-black cursor-pointer">Start Project</button>
+          <Link href="/inquiries" className="px-6 py-2.5 rounded-sm text-xs font-bold tracking-[0.15em] uppercase border transition-all border-white text-white hover:bg-white hover:text-arch-black">Inquiries</Link>
         </div>
         <button onClick={() => setIsOpen(!isOpen)} className="md:hidden text-white">{isOpen ? <X /> : <Menu />}</button>
       </div>
@@ -100,7 +100,7 @@ export default function Nav({ onInquiry }: NavProps) {
               </div>
             )}
           </div>
-          <button onClick={() => { setIsOpen(false); onInquiry() }} className="text-lg font-serif text-arch-charcoal border-b border-gray-100 pb-3 text-left cursor-pointer">Inquiries</button>
+          <Link href="/inquiries" onClick={() => setIsOpen(false)} className="text-lg font-serif text-arch-charcoal border-b border-gray-100 pb-3">Inquiries</Link>
         </div>
       )}
     </nav>

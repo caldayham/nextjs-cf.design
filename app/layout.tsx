@@ -21,10 +21,10 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   metadataBase: new URL('https://cf.design'),
   title: {
-    default: 'CF Design — Custom Construction in the Bay Area',
+    default: 'CF Design - Palo Alto Brothers Delivering Quality Local Builds & Services',
     template: '%s | CF Design',
   },
-  description: 'Constructing beautiful solutions in San Mateo & Santa Clara County.',
+  description: 'Cal & Fynn primarily build & repair custom woodwork, stonework, & metalwork in the Bay Area.',
   icons: { icon: '/assets/cf-icon.png' },
   openGraph: {
     siteName: 'CF Design',

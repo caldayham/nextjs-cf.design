@@ -7,11 +7,11 @@ import Reviews from '@/components/home/Reviews'
 import FAQ from '@/components/home/FAQ'
 
 export const metadata: Metadata = {
-  title: 'CF Design — Custom Construction in the Bay Area',
-  description: 'Cal & Fynn build custom woodwork, decks, and garden structures in Palo Alto and the Bay Area.',
+  title: 'CF Design - Palo Alto Brothers Delivering Quality Local Builds & Services',
+  description: 'Cal & Fynn primarily build & repair custom woodwork, stonework, & metalwork in the Bay Area.',
   openGraph: {
-    title: 'CF Design — Custom Construction in the Bay Area',
-    description: 'Cal & Fynn build custom woodwork, decks, and garden structures in Palo Alto and the Bay Area.',
+    title: 'CF Design - Palo Alto Brothers Delivering Quality Local Builds & Services',
+    description: 'Cal & Fynn primarily build & repair custom woodwork, stonework, & metalwork in the Bay Area.',
     url: 'https://cf.design/',
     images: [{ url: '/assets/cal-fynn-build.jpg', width: 1200, height: 630, alt: 'CF Design' }],
     type: 'website',
@@ -22,7 +22,7 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
   name: 'CF Design',
-  description: 'Custom woodwork, decks, and garden structures in the Bay Area.',
+  description: 'Cal & Fynn primarily build & repair custom woodwork, stonework, & metalwork in the Bay Area.',
   url: 'https://cf.design',
   telephone: '+1-650-521-7269',
   email: 'info@cf.design',
